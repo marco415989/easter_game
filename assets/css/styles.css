@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css?family=Bellota+Text&display=swap');
+
+
+.score{
+    position:fixed;
+    top:0;
+    right:0;
+    height:45px;
+    width:100px;
+    background-color:black;
+    color:#fafafa;
+    margin:5px;
+    border-radius:10px;
+}
+
+.score h3{
+    font-family: 'Bellota Text', cursive;
+    margin-top:5px;
+}
+
+.score-up {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 9999999;
+    width:120px;
+    animation-duration: 2s;
+    animation-iteration-count:1;
+    visibility:hidden;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes score-up-animation {
+
+    0% {
+        visibility: visible;
+        margin-bottom: 0;
+    }
+
+    1% {
+        visibility: visible;
+        margin-bottom: 1%;
+    }
+
+    2% {
+        visibility: visible;
+        margin-bottom: 2%;
+    }
+
+    3% {
+        visibility: visible;
+        margin-bottom: 3%;
+    }
+
+    4% {
+        visibility: visible;
+        margin-bottom: 4%;
+    }
+
+    5% {
+        visibility: visible;
+        margin-bottom: 5%;
+    }
+
+    6% {
+        visibility: visible;
+        margin-bottom: 6%;
+    }
+
+    7% {
+        visibility: visible;
+        margin-bottom: 7%;
+    }
+
+    8% {
+        visibility: visible;
+        margin-bottom: 8%;
+    }
+
+    9% {
+        visibility: visible;
+        margin-bottom: 9%;
+    }
+
+    10% {
+        visibility: visible;
+        margin-bottom: 10%;
+    }
+
+    11% {
+        visibility: visible;
+        margin-bottom: 11%;
+    }
+
+    12% {
+        visibility: visible;
+        margin-bottom: 12%;
+    }
+
+    13% {
+        visibility: visible;
+        margin-bottom: 13%;
+    }
+
+    14% {
+        visibility: visible;
+        margin-bottom: 14%;
+    }
+
+    15% {
+        visibility: visible;
+        margin-bottom: 15%;
+    }
+
+    16% {
+        visibility: visible;
+        margin-bottom: 16%;
+    }
+
+    17% {
+        visibility: visible;
+        margin-bottom: 17%;
+    }
+
+    18% {
+        visibility: visible;
+        margin-bottom: 18%;
+    }
+
+    19% {
+        visibility: visible;
+        margin-bottom: 19%;
+    }
+
+    20% {
+        visibility: visible;
+        margin-bottom: 20%;
+    }
+
+    21% {
+        visibility: visible;
+        margin-bottom: 21%;
+    }
+
+    22% {
+        visibility: visible;
+        margin-bottom: 22%;
+    }
+
+    23% {
+        visibility: visible;
+        margin-bottom: 23%;
+    }
+
+    24% {
+        visibility: visible;
+        margin-bottom: 24%;
+    }
+
+    25% {
+        visibility: visible;
+        margin-bottom: 25%;
+    }
+
+    26% {
+        visibility: visible;
+        margin-bottom: 26%;
+    }
+
+    27% {
+        visibility: visible;
+        margin-bottom: 27%;
+    }
+
+    28% {
+        visibility: visible;
+        margin-bottom: 28%;
+    }
+
+    29% {
+        visibility: visible;
+        margin-bottom: 29%;
+    }
+
+    30% {
+        visibility: visible;
+        margin-bottom: 30%;
+    }
+
+    31% {
+        visibility: visible;
+        margin-bottom: 31%;
+    }
+
+    32% {
+        visibility: visible;
+        margin-bottom: 32%;
+    }
+
+    33% {
+        visibility: visible;
+        margin-bottom: 33%;
+    }
+
+    34% {
+        visibility: visible;
+        margin-bottom: 34%;
+    }
+
+    35% {
+        visibility: visible;
+        margin-bottom: 35%;
+    }
+
+    36% {
+        visibility: visible;
+        margin-bottom: 36%;
+    }
+
+    37% {
+        visibility: visible;
+        margin-bottom: 37%;
+    }
+
+    38% {
+        visibility: visible;
+        margin-bottom: 38%;
+    }
+
+    39% {
+        visibility: visible;
+        margin-bottom: 39%;
+    }
+
+    40% {
+        visibility: visible;
+        margin-bottom: 40%;
+    }
+
+    41% {
+        visibility: visible;
+        margin-bottom: 41%;
+    }
+
+    42% {
+        visibility: visible;
+        margin-bottom: 42%;
+    }
+
+    43% {
+        visibility: visible;
+        margin-bottom: 43%;
+    }
+
+    44% {
+        visibility: visible;
+        margin-bottom: 44%;
+    }
+
+
+    45% {
+        visibility: visible;
+        margin-bottom: 45%;
+    }
+
+    46% {
+        visibility: visible;
+        margin-bottom: 46%;
+    }
+
+    47% {
+        visibility: visible;
+        margin-bottom: 47%;
+    }
+
+    48% {
+        visibility: visible;
+        margin-bottom: 48%;
+    }
+
+    49% {
+        visibility: visible;
+        margin-bottom: 49%;
+    }
+
+    50% {
+        visibility: visible;
+        margin-bottom: 50%;
+    }
+
+    51% {
+        visibility: visible;
+        margin-bottom: 51%;
+    }
+
+    52% {
+        visibility: visible;
+        margin-bottom: 52%;
+    }
+
+    53% {
+        visibility: visible;
+        margin-bottom: 53%;
+    }
+
+    54% {
+        visibility: visible;
+        margin-bottom: 54%;
+    }
+
+    55% {
+        visibility: visible;
+        margin-bottom: 55%;
+    }
+
+
+    56% {
+        visibility: visible;
+        margin-bottom: 56%;
+    }
+
+    57% {
+        visibility: visible;
+        margin-bottom: 57%;
+    }
+
+    58% {
+        visibility: visible;
+        margin-bottom: 58%;
+    }
+
+    59% {
+        visibility: visible;
+        margin-bottom: 59%;
+    }
+    60% {
+        visibility: visible;
+        margin-bottom: 60%;
+    }
+
+    61% {
+        visibility: visible;
+        margin-bottom: 61%;
+    }
+
+    62% {
+        visibility: visible;
+        margin-bottom: 62%;
+    }
+
+    63% {
+        visibility: visible;
+        margin-bottom: 63%;
+    }
+
+    64% {
+        visibility: visible;
+        margin-bottom: 64%;
+    }
+
+    65% {
+        visibility: visible;
+        margin-bottom: 65%;
+    }
+
+    66% {
+        visibility: visible;
+        margin-bottom: 66%;
+    }
+
+    67% {
+        visibility: visible;
+        margin-bottom: 67%;
+    }
+
+    68% {
+        visibility: visible;
+        margin-bottom: 68%;
+    }
+
+    69% {
+        visibility: visible;
+        margin-bottom: 69%;
+    }
+
+    70% {
+        visibility: visible;
+        margin-bottom: 70%;
+    }
+
+    71% {
+        visibility: visible;
+        margin-bottom: 71%;
+    }
+
+    72% {
+        visibility: visible;
+        margin-bottom: 72%;
+    }
+
+    72% {
+        visibility: visible;
+        margin-bottom: 73%;
+    }
+
+    74% {
+        visibility: visible;
+        margin-bottom: 74%;
+    }
+
+    75% {
+        visibility: visible;
+        margin-bottom: 75%;
+    }
+
+    76% {
+        visibility: visible;
+        margin-bottom: 76%;
+    }
+
+    77% {
+        visibility: visible;
+        margin-bottom: 77%;
+    }
+
+    78% {
+        visibility: visible;
+        margin-bottom: 78%;
+    }
+
+    79% {
+        visibility: visible;
+        margin-bottom: 79%;
+    }
+
+    80% {
+        visibility: visible;
+        margin-bottom: 80%;
+    }
+
+    81% {
+        visibility: visible;
+        margin-bottom: 81%;
+    }
+
+    82% {
+        visibility: visible;
+        margin-bottom: 82%;
+    }
+
+    83% {
+        visibility: visible;
+        margin-bottom: 83%;
+    }
+
+    84% {
+        visibility: visible;
+        margin-bottom: 84%;
+    }
+
+    85% {
+        visibility: visible;
+        margin-bottom: 85%;
+    }
+
+    86% {
+        visibility: visible;
+        margin-bottom: 86%;
+    }
+
+    87% {
+        visibility: visible;
+        margin-bottom: 87%;
+    }
+
+    88% {
+        visibility: visible;
+        margin-bottom: 88%;
+    }
+
+    89% {
+        visibility: visible;
+        margin-bottom: 89%;
+    }
+    90% {
+        visibility: visible;
+        margin-bottom: 90%;
+    }
+
+    91% {
+        visibility: visible;
+        margin-bottom: 91%;
+    }
+
+    92% {
+        visibility: visible;
+        margin-bottom: 92%;
+    }
+
+    93% {
+        visibility: visible;
+        margin-bottom: 93%;
+    }
+
+    94% {
+        visibility: visible;
+        margin-bottom: 94%;
+    }
+
+    95% {
+        visibility: visible;
+        margin-bottom: 95%;
+    }
+
+    96% {
+        visibility: visible;
+        margin-bottom: 96%;
+    }
+    97% {
+        visibility: visible;
+        margin-bottom: 97%;
+    }
+
+    98% {
+        visibility: visible;
+        margin-bottom: 98%;
+    }
+
+    99% {
+        visibility: visible;
+        margin-bottom: 99%;
+    }
+
+    100% {
+        visibility: visible;
+        margin-bottom: 100%;
+    }
+}
+

@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Mia-Pascoa-180320201505</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="background-image: url(&quot;assets/img/bg.png&quot;);background-repeat: no-repeat;background-size: cover; position:relative">
+    <div class="score">
+        <center><h3>0</h3></center>
+    </div>
+    <div>
+        <div class="container">
+            <img id="score-up-icon" class='score-up' src="" alt="Pontuação" />
+
+            <div class="row">
+                <div class="col-md-12"><img class="d-lg-flex m-auto justify-content-lg-center" src="assets/img/mia.png" style="width: 774px; padding-bottom: 0px; padding-top: 66px; animation-name:clicked-animation; animation-duration:0.5s"></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+<script>
+    //Acrescenta pontuação
+    function scoreUp(code) {
+
+        var score = $('.score h3');
+
+        var result = parseInt(score.text());
+
+        if (code == 1) {
+
+            result += 1;
+            $('.score h3').text(result);
+            $('#score-up-icon').attr('src', 'assets/img/more_one.png');
+            $('#score-up-icon').css("animation-name", "score-up-animation");
+            removeScoreUp();
+        }
+        else
+        {
+            if (code == 2) {
+                result += 3;
+                $('.score h3').text(result);
+                $('#score-up-icon').attr('src', 'assets/img/more_3.png');
+                $('#score-up-icon').css("animation-name", "score-up-animation");
+                removeScoreUp();
+            }
+            else
+            {
+                result += 8;
+                $('.score h3').text(result);
+                $('#score-up-icon').attr('src', 'assets/img/more_8.png');
+                $('#score-up-icon').css("animation-name", "score-up-animation");
+                removeScoreUp();
+            }
+        }
+    }
+
+    //Remove animação da pontuação
+    function removeScoreUp() {
+        setTimeout(function () {document.getElementById("score-up-icon").style.animationName = "" }, 2000);
+    }
+
+    var xPos;
+    var yPos;
+
+    var screenWidth = window.innerWidth;
+    var screenHeight = window.innerHeight;
+
+    //regula posição do ovo de páscoa no eixo X
+    function randPosX() {
+        return Math.floor(Math.random() * (screenHeight - 250));
+    };
+
+    //regula posição do ovo de páscoa no eixo Y
+    function randPosY() {
+        return Math.floor(Math.random() * (screenWidth - 150));
+    };
+
+    //retorna local aleatório de aparição do ovo de páscoa
+    function randomInt(min, max) {
+        return min + Math.floor((max - min) * Math.random());
+    }
+
+    //Adiciona ovos de páscoa na tela
+    function addEgg() {
+        xPos = randPosX();
+        yPos = randPosY();
+        var image_id = randomInt(1, 25);
+
+        var element_id = 0;
+
+        if (image_id > 0 && image_id < 9) {
+            element_id = 1;
+        }
+        else
+        {
+            if (image_id > 8 && image_id < 22) {
+                element_id = 2;
+            }
+            else
+            {
+                element_id = 3;
+            }
+        }
+
+        $("body").append('<img id="egg_' + element_id + '" src="assets/img/' + image_id + '.png" style="max-width: 220px; position:absolute; top:' + xPos + 'px; left:' + yPos + 'px" onclick="scoreUp(' + element_id + ')"/>');
+
+        //timeout para remoção de ovo da tela
+        setTimeout(function () {
+            document.getElementById('egg_' + element_id).remove();
+        }, 800);
+
+    };
+
+    //intervalo em que os ovos aparecem na tela
+    window.setInterval(function () {
+        addEgg();
+    }, 7000);
+
+</script>
